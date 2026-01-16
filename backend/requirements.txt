@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+sse-starlette
+langchain
+langchain-mistralai
+langchain-community
+langchain-core
+mistralai
+tavily-python
+beautifulsoup4
+requests
+rich
+python-dotenv
