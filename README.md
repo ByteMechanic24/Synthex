@@ -1,7 +1,9 @@
 # Synthex UI
 
-A newsprint-styled React frontend + FastAPI backend for the Synthex research
-pipeline (Search agent → Reader agent → Writer chain → Critic chain).
+Synthex is a newsprint-inspired research desk that combines an interactive
+React frontend with a FastAPI SSE backend. The app orchestrates a staged
+research pipeline (Search agent → Reader agent → Writer chain → Critic chain)
+and presents progress through editorial-style stickers and live status chips.
 
 Your existing `agents.py` / `tools.py` logic is untouched. `pipeline_stream.py`
 is a new file that wraps the same calls with `yield` statements so the API can
@@ -78,3 +80,9 @@ ink, `#CC0000` editorial red used sparingly, zero border radius everywhere,
 Playfair Display headlines, Lora body, Inter UI, JetBrains Mono for
 data/metadata, collapsed grid borders, hard-offset hover shadows, and a
 drop cap on the report's opening paragraph.
+
+## Interactive stickers
+
+The UI uses editorial sticker-style status chips to track progress through the
+pipeline. Each stage shows a stamped badge with live messages, from search and
+reader updates through writer drafts and critic review notes.
